@@ -1,6 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'war'
-apply plugin 'eclipse'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
 
 dependencies {
     // For Jersey REST implementation
@@ -9,6 +13,8 @@ dependencies {
     compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.23.2'
     // For JSON libraries
     compile group: 'org.json', name: 'json', version: '20160810'
+    // hibernate
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.6.Final'
 
     testCompile 'junit:junit:4.11'
 }
