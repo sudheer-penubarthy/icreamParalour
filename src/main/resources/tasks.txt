@@ -1,0 +1,4 @@
+Date operation
+incrementing id
+implementing foreign keys
+implementing one-many and many-one

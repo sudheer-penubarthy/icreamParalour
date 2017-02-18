@@ -60,4 +60,16 @@ public class Employees {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    @Override
+    public String toString() {
+        return "Employees{" +
+               "emp_no=" + emp_no +
+               ", birth_date=" + birth_date +
+               ", first_name='" + first_name + '\'' +
+               ", last_name='" + last_name + '\'' +
+               ", hire_date=" + hire_date +
+               ", gender='" + gender + '\'' +
+               '}';
+    }
 }

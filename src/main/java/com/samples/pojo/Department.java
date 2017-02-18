@@ -13,6 +13,17 @@ public class Department {
         this.dept_name = dept_name;
     }
 
+    @Override
+    public String toString() {
+        return "Department{" +
+               "dept_no='" + dept_no + '\'' +
+               ", dept_name='" + dept_name + '\'' +
+               '}';
+    }
+
+    public Department() {
+    }
+
     public String getDept_no() {
 
         return dept_no;
