@@ -18,7 +18,7 @@ public class Main {
         SessionFactory sessionFactory = new MetadataSources ( registry ).buildMetadata ().buildSessionFactory ();
         Session session = sessionFactory.openSession ();
         session.beginTransaction ();
-        //List result = session.createQuery ( "from Employee" ).list ();
+        //List result = session.createQuery ( "from Employees" ).list ();
 
 
 
