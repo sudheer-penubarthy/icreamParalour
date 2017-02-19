@@ -14,6 +14,13 @@
         <property name="hire_date"></property>
         <property name="gender"></property>
         <property name="birth_date"></property>
+        <set name="salaries" table="salaries" inverse="true"
+             lazy="true" fetch="select" >
+            <key>
+                <column name="emp_no" not-null="true" />
+            </key>
+            <one-to-many class="com.samples.pojo.Salaries" />
+        </set>
 
     </class>
 

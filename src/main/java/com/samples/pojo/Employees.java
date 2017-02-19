@@ -1,6 +1,8 @@
 package com.samples.pojo;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Class for icreamParalour project
@@ -12,6 +14,7 @@ public class Employees {
     private String first_name, last_name;
     private Date hire_date;
     private String gender;
+    private Set<Salaries> salaries = new HashSet <> (  );
 
     public int getEmp_no() {
         return emp_no;
