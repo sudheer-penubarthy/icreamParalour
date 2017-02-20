@@ -23,6 +23,7 @@
         <mapping class="com.entity.Offices" />
         <mapping class="com.entity.Employees"/>
         <mapping class="com.entity.ProductLines" />
+        <mapping class="com.entity.Customer" />
     </session-factory>
 
 </hibernate-configuration>

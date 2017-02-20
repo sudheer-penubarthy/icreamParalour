@@ -6,6 +6,7 @@ package com.impl;
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println ( new EmployeeOperations ().getEmployee ( "1702" ) );
+        //System.out.println ( new EmployeeOperations ().getEmployee ( "1702" ) );
+        System.out.println ( new CustomerOperations ().getCustomers ( "CAF Imports" ) );
     }
 }

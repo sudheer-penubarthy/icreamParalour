@@ -1,6 +1,11 @@
 package com.entity;
 
+import org.hibernate.annotations.GenerationTime;
+import org.hibernate.annotations.GeneratorType;
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
+import javax.ws.rs.DefaultValue;
 
 /**
  * Class for icreamParalour project
@@ -34,6 +39,7 @@ public class Employees {
 
     @Id
     @Column(name="employeeNumber", nullable = false)
+    @GeneratedValue( strategy = GenerationType.SEQUENCE)
     public int getEmployeeNumber() {
         return employeeNumber;
     }

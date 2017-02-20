@@ -45,7 +45,7 @@ public class ProductLines {
         this.htmlDescription = htmlDescription;
     }
 
-    @Column(name = "textDescription")
+    @Column(name = "image")
     public byte[] getImage() {
         return image;
     }
